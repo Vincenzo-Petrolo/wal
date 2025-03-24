@@ -34,7 +34,7 @@ setup(
     ],
     keywords=['verilog', 'VHDL', 'vcd', 'fst', 'development', 'hardware', 'rtl', 'simulation', 'verification', 'FPGA'],
     packages=find_packages(),
-    python_requires='>=3.9, <4',
+    python_requires='>=3.7, <4',
     install_requires=['lark'],
     extras_require={
         'dev': [],

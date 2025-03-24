@@ -3,7 +3,10 @@
 import os
 import wal
 
-from importlib.resources import files
+try:
+    from importlib.resources import files
+except ImportError:
+    from importlib_resources import files
 
 from wal.util import wal_str
 from wal.ast_defs import Operator, UserOperator, Symbol, Environment, Closure, Macro, WList, WalEvalError
